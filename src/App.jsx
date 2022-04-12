@@ -49,21 +49,21 @@ function App() {
         {/* these buttons should add the respective amount in the score */}
         <button className="addScore1" onClick={() =>{
         
-           if(score<=101){
+           if(score<101){
                
                   setScore(score + 1);
               }
         }}>Add 1</button>
         <button className="addScore4" onClick={() =>{
           
-           if(score<=101){
+           if(score<101){
                 
                 setScore(score + 4);
               }
         }}>Add 4</button>
         <button className="addScore6" onClick={() =>{
           
-           if(score<=101){
+           if(score<101){
                
                 setScore(score + 6);
               }
@@ -75,7 +75,7 @@ function App() {
         {/* Increase the count of wicket */}
         <button onClick={() =>{
   
-            if(wicket<12&&score<=101){
+            if(wicket<12&&score<101){
                       setWicket(wicket + 1);
                 
               }
@@ -91,7 +91,7 @@ function App() {
     ball += .5;
     else 
     ball += .1;
-    if(score<=101){
+    if(score<101){
           setBall(ball);
         }
         }}>Add 1</button>
